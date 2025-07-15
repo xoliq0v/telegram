@@ -1,0 +1,3 @@
+venv/** linguist-vendored
+*.py linguist-vendored
+*.md linguist-documentation
