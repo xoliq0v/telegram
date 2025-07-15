@@ -1,0 +1,36 @@
+name: telegram
+
+packages:
+  - app/**
+  - app/feature/**
+  - data/**
+  - domain/**
+  - '*'
+
+command:
+  bootstrap:
+    environment:
+      sdk: '>=3.5.3 <4.0.0'
+
+scripts:
+
+  get:
+    run: |
+      flutter pub get # Gets packages in the root folder first
+      melos exec -c 1 --fail-fast --no-flutter -- \
+        pub get
+      melos exec -c 1 --fail-fast --flutter -- \
+        flutter pub get
+    description: Run `pub get` in all the packages
+
+  clean:
+    run: |
+      flutter clean # Clean root folder first
+      melos exec flutter clean
+    description: Run `flutter clean` in all the packages
+
+
+
+  generate:flutter:
+    run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build --delete-conflicting-outputs"
+    description: Build all generated files for Flutter packages in this project.

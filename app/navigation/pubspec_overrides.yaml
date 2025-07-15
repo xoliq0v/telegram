@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: app_bloc,core,feature_auth,feature_main,telegram_database_lib
+dependency_overrides:
+  app_bloc:
+    path: ../app_bloc
+  core:
+    path: ../../domain/core
+  feature_auth:
+    path: ../feature/feature_auth
+  feature_main:
+    path: ../feature/feature_main
+  telegram_database_lib:
+    path: ../../data/telegram_database_lib

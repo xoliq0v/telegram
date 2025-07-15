@@ -1,0 +1,188 @@
+name: design_system
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.5.3
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  core:
+    path: ../../domain/core
+  telegram_database_lib:
+    path: ../../data/telegram_database_lib
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  assets:
+    - assets/emojis/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/roboto/Roboto-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/roboto/Roboto-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/roboto/Roboto-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/roboto/Roboto-Black.ttf
+          weight: 900
+        - asset: assets/fonts/roboto/Roboto-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/roboto/Roboto-BlackItalic.ttf
+          weight: 900
+          style: italic
+
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/roboto/Roboto_Condensed-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/roboto/Roboto_Condensed-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/roboto/Roboto_Condensed-Light.ttf
+          weight: 300
+        - asset: assets/fonts/roboto/Roboto_Condensed-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/roboto/Roboto_Condensed-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/roboto/Roboto_Condensed-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/roboto/Roboto_Condensed-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/roboto/Roboto_Condensed-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/roboto/Roboto_Condensed-Black.ttf
+          weight: 900
+        - asset: assets/fonts/roboto/Roboto_Condensed-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_Condensed-BlackItalic.ttf
+          weight: 900
+          style: italic
+
+    - family: RobotoSemiCondensed
+      fonts:
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Light.ttf
+          weight: 300
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Black.ttf
+          weight: 900
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/roboto/Roboto_SemiCondensed-BlackItalic.ttf
+          weight: 900
+          style: italic
+    - family: RMono
+      fonts:
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Roboto_Mono/static/RobotoMono-BoldItalic.ttf
+          weight: 700
+          style: italic
